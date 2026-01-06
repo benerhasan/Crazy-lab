@@ -1,73 +1,100 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>Crazy Lab</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: radial-gradient(circle at top, #10162f, #05070f);
-      color: #e6f1ff;
-      text-align: center;
-    }
-    header {
-      padding: 80px 20px;
-    }
-    h1 {
-      color: #00ffcc;
-      font-size: 3em;
-      letter-spacing: 2px;
-    }
-    p {
-      font-size: 1.2em;
-      opacity: 0.9;
-    }
-    button {
-      background: #00ffcc;
-      color: #000;
-      border: none;
-      padding: 12px 24px;
-      margin: 10px;
-      font-size: 16px;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-    footer {
-      margin-top: 60px;
-      font-size: 12px;
-      opacity: 0.6;
-    }
-  </style>
+<meta charset="UTF-8">
+<title>Crazy Lab</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0b0f1a;
+  color: #e0e0e0;
+}
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #05070f;
+  padding: 10px;
+  text-align: center;
+}
+nav a {
+  color: #00ffcc;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+section {
+  padding: 100px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+h1, h2 {
+  color: #00ffcc;
+  text-align: center;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+li {
+  margin: 15px 0;
+  text-align: center;
+}
+a.exp {
+  color: #ffffff;
+  text-decoration: none;
+}
+a.exp:hover {
+  color: #00ffcc;
+}
+footer {
+  text-align: center;
+  font-size: 12px;
+  opacity: 0.6;
+  padding: 40px 20px;
+}
+</style>
 </head>
+
 <body>
 
-<header>
+<nav>
+  <a href="#presentation">Présentation</a>
+  <a href="#lab">Le Labo</a>
+  <a href="#experiences">Expériences</a>
+</nav>
+
+<section id="presentation">
   <h1>🧪 CRAZY LAB</h1>
-  <p id="text">
-    Bienvenue à Crazy Lab.<br>
-    La science est sérieuse.<br>
-    Les idées sont discutables.
+  <p style="text-align:center">
+    Science sérieuse.<br>
+    Résultats absurdes.
   </p>
-  <button onclick="fr()">FR</button>
-  <button onclick="en()">EN</button>
-</header>
+</section>
+
+<section id="lab">
+  <h2>Le Labo</h2>
+  <p>
+    Crazy Lab est un laboratoire fictif.<br>
+    Financement inexistant.<br>
+    Méthodologie discutable mais assumée.
+  </p>
+</section>
+
+<section id="experiences">
+  <h2>Sommaire des expériences</h2>
+  <ul>
+    <li><a class="exp" href="exp-001.html">Expérience #001 — Le café pense-t-il plus vite que l’humain ?</a></li>
+    <li><a class="exp" href="exp-014.html">Expérience #014 — Fixer un mur rend-il plus intelligent ?</a></li>
+    <li><a class="exp" href="exp-027.html">Expérience #027 — La science fonctionne-t-elle mieux à 3h du matin ?</a></li>
+  </ul>
+</section>
 
 <footer>
-  ⚠️ Expériences fictives — Labo secret non approuvé par qui que ce soit
+⚠️ Toutes les expériences sont fictives — Crazy Lab
 </footer>
-
-<script>
-function fr() {
-  document.getElementById("text").innerHTML =
-  "Bienvenue à Crazy Lab.<br>La science est sérieuse.<br>Les idées sont discutables.";
-}
-function en() {
-  document.getElementById("text").innerHTML =
-  "Welcome to Crazy Lab.<br>Science is serious.<br>Ideas are questionable.";
-}
-</script>
 
 </body>
 </html>
