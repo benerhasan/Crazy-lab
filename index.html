@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Crazy Lab</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: radial-gradient(circle at top, #10162f, #05070f);
+      color: #e6f1ff;
+      text-align: center;
+    }
+    header {
+      padding: 80px 20px;
+    }
+    h1 {
+      color: #00ffcc;
+      font-size: 3em;
+      letter-spacing: 2px;
+    }
+    p {
+      font-size: 1.2em;
+      opacity: 0.9;
+    }
+    button {
+      background: #00ffcc;
+      color: #000;
+      border: none;
+      padding: 12px 24px;
+      margin: 10px;
+      font-size: 16px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    footer {
+      margin-top: 60px;
+      font-size: 12px;
+      opacity: 0.6;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>🧪 CRAZY LAB</h1>
+  <p id="text">
+    Bienvenue à Crazy Lab.<br>
+    La science est sérieuse.<br>
+    Les idées sont discutables.
+  </p>
+  <button onclick="fr()">FR</button>
+  <button onclick="en()">EN</button>
+</header>
+
+<footer>
+  ⚠️ Expériences fictives — Labo secret non approuvé par qui que ce soit
+</footer>
+
+<script>
+function fr() {
+  document.getElementById("text").innerHTML =
+  "Bienvenue à Crazy Lab.<br>La science est sérieuse.<br>Les idées sont discutables.";
+}
+function en() {
+  document.getElementById("text").innerHTML =
+  "Welcome to Crazy Lab.<br>Science is serious.<br>Ideas are questionable.";
+}
+</script>
+
+</body>
+</html>
